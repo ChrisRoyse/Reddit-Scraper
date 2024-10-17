@@ -58,34 +58,20 @@
 
 ### Steps
 
-1. **Clone the Repository**
-
-   ```bash
-   git clone https://github.com/yourusername/CreditLeadScraper.git
-   cd CreditLeadScraper
-   ```
-
-2. **Create a Virtual Environment (Optional)**
-
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. **Install Required Packages**
+1. **Install Required Packages**
 
    ```bash
    pip install praw
    ```
 
-4. **Set Up Reddit API Credentials**
+2. **Set Up Reddit API Credentials**
 
    - Go to [Reddit Apps](https://www.reddit.com/prefs/apps) and create a new script application.
    - Obtain your `client_id`, `client_secret`, and set a `user_agent`.
 
-5. **Configure the Script**
+3. **Configure the Script**
 
-   - Open the script file `credit_lead_scraper.py`.
+   - Open the script file `reddit_search.py`.
    - Replace the placeholder credentials with your actual Reddit API credentials:
 
      ```python
@@ -94,7 +80,7 @@
      user_agent = 'windows:YOUR_APP_NAME:v0.1 (by /u/YOUR_REDDIT_USERNAME)'
      ```
 
-6. **Customize Keywords and Filters (Optional)**
+4. **Customize Keywords and Filters (Optional)**
 
    - Modify the `keywords` list to include any additional keywords you want to search for.
    - Adjust filter functions as needed to refine your search criteria.
@@ -104,7 +90,7 @@
 1. **Run the Script**
 
    ```bash
-   python credit_lead_scraper.py
+   python reddit_search.py
    ```
 
 2. **Monitor Output**
